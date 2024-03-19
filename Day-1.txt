@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1{
+            color: blue;
+           
+            text-align: center;
+        }
+        h2{
+            color: brown;
+        }
+        p{
+            color: rgb(203, 48, 156);
+        }
+        #founder{
+            color: rgb(225, 13, 13);
+           
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veritech Company Team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Veritech Company</h1>
+        <h4>We are dedicated to a team of professionals working together to bring innovation, creativity, and expertise to the software industry. Get to know the individuals who make our company thrive.</h4>
+    </header>
+    <header>
+      <h2> Meet Our Team</h2> 
+    </header>
+    
+    <main>
+        <section id="leadership-team">
+            <h2>Leadership/Management Team</h2>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Leader 1" width="100px">
+                <h3>John Doe</h3>
+                <p id="founder">FOUNDER/CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Leader 1" width="100px">
+                <h3>Smith</h3>
+                <p id="founder">FOUNDER/CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Leader 1" width="100px">
+                <h3>Ram</h3>
+                <p>Sales & Marketing</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Leader 1" width="100px">
+                <h3>Abhilash</h3>
+                <p>Sales & Marketing</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Leader 1" width="100px">
+                <h3>Akshay</h3>
+                <p>Finance & Operations</p>
+            </div>
+            
+            <!-- Add more team members as needed -->
+        </section>
+
+        <section id="development-team">
+            <h2>Development Team</h2>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Developer 1" width="100px">
+                <h3>Jane Smith</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Developer 1" width="100px">
+                <h3>Akhil</h3>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Developer 1" width="100px">
+                <h3>Akash</h3>
+                <p>Software Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Developer 1" width="100px">
+                <h3>Nikhil</h3>
+                <p>Software Engineer</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </section>
+
+        <section id="sales-marketing-team">
+            <h2>Sales and Marketing Team</h2>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Salesperson 1" width="100px">
+                <h3>David Johnson</h3>
+                <p>Sales Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Salesperson 1" width="100px">
+                <h3>Ramesh</h3>
+                <p>Sales Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.Beeraiah\Downloads\founder.jpeg" alt="Salesperson 1" width="100px">
+                <h3>Suresh</h3>
+                <p>Sales Officer</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veritech Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
