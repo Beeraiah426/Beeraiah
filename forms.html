@@ -1,0 +1,110 @@
+<html>
+<head>
+<script>
+
+
+
+
+
+
+function validate()
+	{
+	var x=document.f1.t1.value;
+	var y=document.f1.t2.value;
+	var z=document.f1.t3.value;
+	var a=document.f1.t4.value;
+	var b=document.f1.gender.value;
+	
+	var re=/^[A-Za-z]+$/;
+	if(x=="")
+	{
+		alert('Please enter user name');
+		return false;
+	}
+	else if(y==""){
+		alert('Please enter password');
+		return false;
+	}
+	else if(y.length<6)
+	{
+		alert('Password should greater than or equals to 6');
+		return false;		
+	}
+	else if(!(re.test(x)))
+	{
+		alert('user name should be alphabets')
+		return false;
+	}
+	else if(z==""){
+		alert('Please Enter your mail id');
+		return false;
+	}
+	else if(a==""){
+		alert('Please Enter your mobile number')
+		return false;
+	}
+	else if(b==""){
+		alert('Please Select your gender')
+		return false;
+	}
+	else
+	{
+		alert('welcome'+'Mr.'+x);
+	}
+	}
+	
+	
+	</script>
+	
+	
+	<style>
+	
+	h1{
+	color:blue;
+	}
+	
+        input[type=submit] {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        input[type=submit]:hover {
+            background-color: black;
+            color: red;
+        }
+		
+		input[type=reset] {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        input[type=reset]:hover {
+            background-color:black;
+            color: red;
+        }
+    </style>
+	
+	
+<body bgcolor="">
+<form name="f1" onsubmit="return validate()"  action="Registered.html">
+
+<center><h1>STUDENT REGISTRATION FORM</h1>
+Username<input type="text" name="t1"><br><br>
+Password<input type="password" name="t2" pattern="[0-9]{10 }"><br><br>
+Mail id<input type="Email" name="t3" ><br><br>
+Phone no<input type="tel" placeholder="91" size="2" name="ccode">
+<input type="tel" name="t4" pattern="[0-9]{10}"><br><br>
+Gender <input type="radio" name="gender">Male
+		<input type="radio" name="gender">Female<br><br>
+		
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</center>
+</form>
+
+</body>
+</html>
