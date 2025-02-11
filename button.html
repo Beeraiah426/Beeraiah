@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: red;
+      color: black;
+    }
+  </style>
+  <title>Form Validation Example</title>
+</head>
+<body>
+  <h1 id="abc">HTML Style Object</h1>
+  <h2>The BackgroundColor Property</h2>
+
+  <!-- First Form -->
+  <form name="myformdata" onsubmit="return element()" action="Registered.html">
+    Firstname: <input type="text" name="fname"><br><br>
+    Lastname: <input type="text" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- Button to Change Background Color -->
+  <button type="button" onclick="myFunction()">Set Background Color</button>
+
+  <!-- Second Form -->
+  <form name="f1" onsubmit="return validate()" onreset="resetdata()">
+    <center>
+      Username: <input type="text" name="t1"><br><br>
+      Password: <input type="password" name="t2"><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </center>
+  </form>
+
+  <script>
+    // Function to change background color
+    function myFunction() {
+      document.body.style.backgroundColor = "violet";
+    }
+
+    // Function to validate the first form
+    function element() {
+      var x = document.myformdata.fname.value;
+      if (x == null || x == "") {
+        alert('Please enter valid data. Form cannot be blank');
+        return false;
+      } else if (x.length <= 2) {
+        alert('Please enter valid data above 2 characters');
+        return false;
+      }
+    }
+
+    // Function to reset the second form
+    function resetdata() {
+      alert('Your form has been reset');
+    }
+	
+	
+
+    // Function to validate the second form
+    function validate() {
+      var x = document.f1.t1.value;
+      var y = document.f1.t2.value;
+      var re = /^[A-Za-z]+$/;
+
+      if (x == "" || y == "") {
+        alert('Enter both user ID and password');
+        return false;
+      } else if (x.length < 6 || y.length < 6) {
+        alert('Both user ID and password should be greater than or equal to 6 characters');
+        return false;
+      } else if (!re.test(x)) {
+        alert('User name should contain only alphabets');
+        return false;
+      } else {
+        alert('Welcome, Mr. ' + x);
+      }
+    }
+  </script>
+</body>
+</html>
